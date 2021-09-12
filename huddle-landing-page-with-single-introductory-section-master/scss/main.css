@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #674baf;
+  background-image: url(../images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  width: 95%;
+  height: 640px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.photoside {
+  width: 65%;
+  height: 640px;
+      grid-template-areas: nuotrauka;
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+
+.textside {
+  width: 35%;
+  height: 640px;
+  color: white;
+  margin-right: 100px;
+      grid-template-areas: text;
+}
+
+.textside h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+.icons {
+  width: 95%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+      grid-template-areas: icon;
+}
+
+.icons .icon-item {
+  margin: 10px 10px;
+}
+
+.register {
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  border-radius: 40px;
+  margin-top: 20px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #674baf;
+}
+
+.register:hover {
+  background-color: #e882e8;
+  cursor: pointer;
+}
+
+.icon-item:hover {
+  background-color: #e882e8;
+  cursor: pointer;
+}
+
+@media (max-width: 575px) {
+  .card {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .photoside {
+    width: 100%;
+    height: 40%;
+    margin: 0 auto;
+  }
+  .photoside img {
+    width: 100%;
+  }
+  .textside {
+    width: 100%;
+    height: 60%;
+    max-width: 475px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .icons {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 40px;
+  }
+  .register {
+    width: 200px;
+    margin-top: 40px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
